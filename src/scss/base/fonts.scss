@@ -1,0 +1,13 @@
+@mixin font($fontFamily: '', $fileName: '', $fontWeight: 400, $fontStyle: normal, $fontDisplay: swap) {
+  @font-face {
+    font-family: $fontFamily;
+    src: url('../static/fonts/#{$fileName}.woff2') format('woff2'),
+    url('../static/fonts/#{$fileName}.woff') format('woff');
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    font-display: $fontDisplay;
+  }
+}
+
+@include font('Inter', 'Inter-Regular', 400);
+@include font('Inter', 'Inter-Medium', 500);
