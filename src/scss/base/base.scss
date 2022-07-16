@@ -9,6 +9,22 @@
   outline: none;
 }
 
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: 767px) {
+    font-size: calc(10px + 13 * (100vw - 375px) / 447);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: calc(10px + 4 * (100vw - 768px) / 255);
+  }
+
+  @media (min-width: 1024px) and (max-width: 1360px) {
+    font-size: calc(8px + 2 * (100vw - 1024px) / 336);
+  }
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,6 +35,14 @@ body {
   flex-direction: column;
   font-size: 1.6rem;
   font-family: $font_main;
+  font-weight: 500;
+  color: $color-text;
+  background-color: $background_default;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 main {

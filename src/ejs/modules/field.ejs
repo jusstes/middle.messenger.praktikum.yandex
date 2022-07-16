@@ -1,0 +1,7 @@
+<% fields.forEach(({ id, type, label, error, inputName, required }) => { %>
+    <div class="field">
+        <label class="field__label" for="<%- id %>"><%- label %></label>
+        <input class="field__input" <%- required ? 'required' : '' %> name="<%- inputName %>" type="<%- type %>" id="<%- id %>" autocomplete="off">
+        <span class="field__error"><%- error %></span>
+    </div>
+<% }) %>

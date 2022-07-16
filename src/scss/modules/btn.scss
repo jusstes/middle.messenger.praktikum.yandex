@@ -3,4 +3,17 @@
   border: 0;
   background: transparent;
   user-select: none;
+
+  &.default {
+    @include text-btn;
+
+    width: 100%;
+    max-width: 28rem;
+    margin-top: 16rem;
+    padding: 1.2rem 7rem;
+    border-radius: 8px;
+    color: $color_text;
+    background-color: $color_accent;
+    cursor: pointer;
+  }
 }
