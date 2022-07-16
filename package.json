@@ -2,11 +2,9 @@
   "name": "messenger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "source": "src/index.ejs",
   "scripts": {
-    "start": "parcel --open",
-    "build": "parcel build index.html"
+    "start": "parcel src/views/*.ejs",
+    "build": "parcel build src/views/*.ejs"
   },
   "keywords": [],
   "author": "",
