@@ -1,0 +1,20 @@
+{
+  "name": "messenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "src/index.ejs",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.6.2",
+    "parcel": "^2.6.2",
+    "parcel-transformer-ejs": "^1.0.0",
+    "prettier": "2.6.2"
+  }
+}
