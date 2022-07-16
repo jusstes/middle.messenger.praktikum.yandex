@@ -34,5 +34,24 @@
 
     color: $color_accent;
     margin-top: 2.4rem;
+
+    &._logout {
+      color: $color_error;
+    }
+  }
+
+  &__photo {
+    @include box(13rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.2rem;
+    border-radius: 100%;
+    background-color: $color_gray;
+
+    svg {
+      max-width: 6rem;
+    }
   }
 }

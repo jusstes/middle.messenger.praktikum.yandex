@@ -18,6 +18,9 @@
     @include text-error;
 
     margin-top: 0.8rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility $transition-default, opacity $transition-default;
   }
 
   &__input {
