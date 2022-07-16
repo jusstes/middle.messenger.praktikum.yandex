@@ -1,3 +1,21 @@
 <%- include('../layout/head.ejs'); %>
-<p>chat page</p>
+<% const testEjs = [
+    {
+        title: 'test'
+    },
+    {
+        title: 'test'
+    },
+    {
+        title: 'test'
+    },
+    {
+        title: 'test'
+    }
+] %>
+
+<% testEjs.forEach(({ title }, index) => {  %>
+    <p><%- title %> #<%- index %> chat page</p>
+<% }) %>
+
 <%- include('../layout/foot.ejs'); %>
