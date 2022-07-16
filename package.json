@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel src/views/*.ejs",
+    "start": "parcel src/views/*.ejs --open",
     "build": "parcel build src/views/*.ejs"
   },
   "keywords": [],

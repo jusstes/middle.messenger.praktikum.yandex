@@ -1,0 +1,9 @@
+// container
+$width_container: 128rem;
+$width_container_tablet: calc(100% - 8rem);
+$width_container_mobile: calc(100% - 4rem);
+
+// transitions
+$transition_duration: .25s;
+$transition_ease: ease;
+$transition-default: $transition_duration $transition_ease;
