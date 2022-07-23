@@ -1,5 +1,5 @@
 ## Описание  
-Приложение мессенджера, написанное на ejs + scss, собирается в parcel, запускается на express, задеплоено в [netlify](https://62dc411b3f875f473886b4ff--storied-sprite-3c3831.netlify.app/)
+Приложение мессенджера, написанное на ejs + scss, собирается в parcel, запускается на express, задеплоено в [netlify](https://storied-sprite-3c3831.netlify.app/)
 
 ## Команды для запуска  
 `yarn` - установка зависимостей  
@@ -13,4 +13,4 @@ https://www.figma.com/file/oPHxTbIG60roBtiF3wMQsN/Chat_external_link-(Copy)?node
 ## Ссылка на pull-request  
 
 ## Ссылка на опубликованное приложение  
-https://62dc411b3f875f473886b4ff--storied-sprite-3c3831.netlify.app/
+https://storied-sprite-3c3831.netlify.app/
