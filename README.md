@@ -11,6 +11,7 @@
 https://www.figma.com/file/oPHxTbIG60roBtiF3wMQsN/Chat_external_link-(Copy)?node-id=0%3A1
 
 ## Ссылка на pull-request  
+https://github.com/jusstes/middle.messenger.praktikum.yandex/pull/2
 
 ## Ссылка на опубликованное приложение  
 https://storied-sprite-3c3831.netlify.app/
