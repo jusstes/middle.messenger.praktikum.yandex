@@ -1,0 +1,10 @@
+@mixin text-decoration($color: $color_accent) {
+  text-decoration: underline transparent;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 1px;
+  transition: text-decoration-color $transition-default;
+
+  @include hover {
+    text-decoration-color: $color;
+  }
+}

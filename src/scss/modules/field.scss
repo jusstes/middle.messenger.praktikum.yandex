@@ -1,0 +1,40 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.6rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__label {
+    @include text-label;
+
+    margin-bottom: 0.8rem;
+  }
+
+  &__error {
+    @include text-error;
+
+    margin-top: 0.8rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility $transition-default, opacity $transition-default;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid $color_accent;
+    color: $color_text;
+    font-size: 2rem;
+    line-height: 2rem;
+    background-color: transparent;
+
+    &._hidden {
+      display: none;
+    }
+  }
+}

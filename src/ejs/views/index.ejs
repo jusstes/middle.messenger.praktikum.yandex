@@ -1,0 +1,116 @@
+<%- include('../layout/head.ejs', { title: 'Мессенджер' }); %>
+
+<main>
+    <div class="app-section chat">
+        <div class="app-section__side">
+            <a href="profile.ejs" class="chat__link">Профиль</a>
+            <input type="text" placeholder="Поиск" class="chat__search">
+
+            <% const chatFields = [
+                {
+                    userName: 'Alex',
+                    src: '../../static/images/photo.jpg',
+                    className: '',
+                    time: 'Пн',
+                    message: 'Вы: стикер',
+                    unreadMessageCount: '3'
+                },
+                {
+                    userName: 'Dmitry',
+                    src: '../../static/images/photo.jpg',
+                    className: '',
+                    time: '12 апр 2022',
+                    message: 'Изображение'
+                },
+                {
+                    userName: 'Matthew',
+                    src: '../../static/images/photo.jpg',
+                    className: '',
+                    time: 'Вчера',
+                    message: 'И Human Interface Guidelines и Material Design рекомендуют...',
+                    unreadMessageCount: '3'
+                },
+                {
+                    userName: 'Noel',
+                    src: '../../static/images/photo.jpg',
+                    className: '',
+                    time: 'Вт',
+                    message: 'И Human Interface Guidelines и Material Design рекомендуют И Human Interface Guidelines и Material Design рекомендуют...',
+                    unreadMessageCount: '33'
+                }
+            ] %>
+
+            <%- include('../modules/user-field.ejs', { fields: chatFields }); %>
+        </div>
+        <div class="app-section__main">
+            <div class="app-section__heading">
+
+                <% const profileField = [
+                    {
+                        userName: 'Alex',
+                        src: '../../static/images/photo.jpg',
+                        className: ''
+                    }
+                ] %>
+
+                <%- include('../modules/user-field.ejs', { fields: profileField }); %>
+                <button type="button" class="dots">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </button>
+            </div>
+            <div class="app-section__content">
+
+                <% const messages = [
+                    {
+                        text: 'Привет! Смотри, тут всплыл интересный кусок ',
+                        time: '14:48'
+                    },
+                    {
+                        text: 'НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. ',
+                        time: '14:48'
+                    },
+                    {
+                        text: 'Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой. Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.',
+                        time: '14:48',
+                        isYourMessage: false
+                    },
+                    {
+                        isMedia: true,
+                        time: '14:48',
+                        isYourMessage: false,
+                        src: '../../static/images/archi.jpg'
+                    },
+                    {
+                        isMedia: true,
+                        time: '14:48',
+                        isYourMessage: true,
+                        src: '../../static/images/sailing.jpeg'
+                    },
+                    {
+                        text: 'Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой. Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.',
+                        time: '14:48',
+                        isYourMessage: false
+                    },
+                    {
+                        text: 'Проверим?',
+                        time: '19:48',
+                        isYourMessage: true,
+                        isRead: true
+                    }
+                ] %>
+
+                <%- include('../modules/message.ejs', { messages }); %>
+            </div>
+
+            <form class="app-section__controls | js-form">
+                <button type="button" class="chat__attach"></button>
+                <input type="text" class="chat__message-input" placeholder="Сообщение">
+                <button type="submit" class="chat__submit"></button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<%- include('../layout/foot.ejs'); %>
