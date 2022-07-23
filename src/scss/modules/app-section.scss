@@ -13,6 +13,10 @@
     border-right: 1px solid $color_gray;
     overflow-y: auto;
 
+    @include --tablet {
+      max-width: 30rem;
+    }
+
     .user {
       max-width: unset;
       padding: 1.2rem 1rem;
@@ -60,8 +64,22 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 1rem 0;
+    padding: 1rem 1rem 0 0;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: rgba($color_accent, 0.7);
+    }
   }
 
   &__controls {

@@ -1212,7 +1212,7 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==
 
-express@^4.18.1:
+express@4.18.1:
   version "4.18.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.1.tgz#7797de8b9c72c857b9cd0e14a5eea80666267caf"
   integrity sha512-zZBcOX9TfehHQhtupq57OF8lFZ3UZi08Y97dwFCkD8p9d/d2Y3M+ykKcwaMDEL+4qyUolgBDX6AblpR3fL212Q==
@@ -1610,7 +1610,7 @@ node-releases@^2.0.6:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.6.tgz#8a7088c63a55e493845683ebf3c828d8c51c5503"
   integrity sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==
 
-nodemon@^2.0.19:
+nodemon@2.0.19:
   version "2.0.19"
   resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.19.tgz#cac175f74b9cb8b57e770d47841995eebe4488bd"
   integrity sha512-4pv1f2bMDj0Eeg/MhGqxrtveeQ5/G/UVe9iO6uTZzjnRluSA4PVWf8CW99LUPwGB3eNIA7zUFoP77YuI7hOc0A==
@@ -1667,7 +1667,7 @@ ordered-binary@^1.2.4:
   resolved "https://registry.yarnpkg.com/ordered-binary/-/ordered-binary-1.3.0.tgz#a116d64c923278216e335602d279750b2ebd746e"
   integrity sha512-knIeYepTI6BDAzGxqFEDGtI/iGqs57H32CInAIxEvAHG46vk1Di0CEpyc1A7iY39B1mfik3g3KLYwOTNnnMHLA==
 
-parcel-transformer-ejs@^1.0.0:
+parcel-transformer-ejs@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parcel-transformer-ejs/-/parcel-transformer-ejs-1.0.0.tgz#79e0a041c69287ae397986c6d664392cbe954d20"
   integrity sha512-7wEKR+2D4jMQ0+qeycZha/PPVg5nF1C2RrHDXz/T8yw6/KnbvXwokb7Vu5zD0r8Y0GO8n5spMz/W04KygLgYog==
@@ -1675,7 +1675,7 @@ parcel-transformer-ejs@^1.0.0:
     "@parcel/plugin" "^2.0.0-alpha.3"
     ejs "^3.1.8"
 
-parcel@^2.6.2:
+parcel@2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/parcel/-/parcel-2.6.2.tgz#4585208880f42b24935c7d3ad167dcd42f8174eb"
   integrity sha512-q6hrD3rm9M4S/VBVTcOs3pl55cnRwWfco7n8hZoAqnInWjWB+Khu92LRBMerMBTdE15Y+lJhWrXNdimDYstfhQ==
