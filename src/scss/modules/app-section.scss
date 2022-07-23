@@ -1,0 +1,74 @@
+.app-section {
+  display: flex;
+  height: 100vh;
+
+  &__side {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 40rem;
+    border-right: 1px solid $color_gray;
+    overflow-y: auto;
+
+    .user {
+      max-width: unset;
+      padding: 1.2rem 1rem;
+      border-bottom: 1px solid $color_gray;
+      cursor: pointer;
+
+      &:first-of-type {
+        border-top: 1px solid $color_gray;
+      }
+
+      @include hover {
+        background-color: $background_modal;
+      }
+
+      &__image {
+        @include box(4.7rem);
+      }
+
+      &__heading {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid $color_gray;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    overflow-y: auto;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid $color_gray;
+  }
+}

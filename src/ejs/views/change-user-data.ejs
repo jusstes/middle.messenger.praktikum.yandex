@@ -1,28 +1,44 @@
-<%- include('../layout/head.ejs', { title: 'Изменить пароль' }); %>
+<%- include('../layout/head.ejs', { title: 'Изменить данные' }); %>
 
 <% const fields = [
     {
-        id: 'oldPassword',
-        type: 'password',
-        label: 'Старый пароль',
-        error: 'Введите пароль',
-        inputName: 'oldPassword',
+        id: 'email',
+        type: 'email',
+        label: 'Почта',
+        error: 'Введите почту',
+        inputName: 'email',
         required: true
     },
     {
-        id: 'newPassword',
-        type: 'password',
-        label: 'Новый пароль',
-        error: 'Введите пароль',
-        inputName: 'newPassword',
+        id: 'login',
+        type: 'text',
+        label: 'Логин',
+        error: 'Введите логин',
+        inputName: 'login',
         required: true
     },
     {
-        id: 'password-repeat',
-        type: 'password',
-        label: 'Повторите пароль',
-        error: 'Пароли не совпадают',
-        inputName: 'password-repeat',
+        id: 'firstname',
+        type: 'text',
+        label: 'Имя',
+        error: 'Введите имя',
+        inputName: 'first_name',
+        required: true
+    },
+    {
+        id: 'lastname',
+        type: 'text',
+        label: 'Фамилия',
+        error: 'Введите фамилию',
+        inputName: 'second_name',
+        required: true
+    },
+    {
+        id: 'tel',
+        type: 'tel',
+        label: 'Телефон',
+        error: 'Введите телефон',
+        inputName: 'phone',
         required: true
     }
 ] %>

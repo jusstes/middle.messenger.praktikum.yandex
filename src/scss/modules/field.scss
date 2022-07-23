@@ -32,5 +32,9 @@
     font-size: 2rem;
     line-height: 2rem;
     background-color: transparent;
+
+    &._hidden {
+      display: none;
+    }
   }
 }

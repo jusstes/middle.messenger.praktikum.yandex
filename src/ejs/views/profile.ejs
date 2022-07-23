@@ -7,7 +7,7 @@
         label: 'Почта',
         error: 'Введите почту',
         inputName: 'email',
-        required: true
+        required: false
     },
     {
         id: 'login',
@@ -15,7 +15,7 @@
         label: 'Логин',
         error: 'Введите логин',
         inputName: 'login',
-        required: true
+        required: false
     },
     {
         id: 'firstname',
@@ -23,7 +23,7 @@
         label: 'Имя',
         error: 'Введите имя',
         inputName: 'first_name',
-        required: true
+        required: false
     },
     {
         id: 'lastname',
@@ -31,7 +31,7 @@
         label: 'Фамилия',
         error: 'Введите фамилию',
         inputName: 'second_name',
-        required: true
+        required: false
     },
     {
         id: 'tel',
@@ -39,7 +39,7 @@
         label: 'Телефон',
         error: 'Введите телефон',
         inputName: 'phone',
-        required: true
+        required: false
     },
     {
         id: 'password',
@@ -47,7 +47,7 @@
         label: 'Пароль',
         error: 'Введите пароль',
         inputName: 'password',
-        required: true
+        required: false
     },
     {
         id: 'password-repeat',
@@ -55,22 +55,31 @@
         label: 'Повторите пароль',
         error: 'Пароли не совпадают',
         inputName: 'password-repeat',
-        required: true
+        required: false
+    },
+    {
+        id: 'avatar',
+        type: 'file',
+        inputName: 'avatar',
+        required: false,
+        className: '_hidden'
     }
 ] %>
-<% const btn = {
+<% const changeUserData = {
     title: 'Изменить данные',
-    type: 'submit',
-    className: 'btn default _low-margin'
+    className: 'btn default _low-margin',
+    tagName: 'link',
+    href: 'change-user-data.ejs'
 } %>
-<% const secondBtn = {
+<% const changeUserPassword = {
     title: 'Изменить пароль',
-    type: 'submit',
-    className: 'btn default _low-margin'
+    className: 'btn default _low-margin',
+    tagName: 'link',
+    href: 'change-password.ejs'
 } %>
 
 <main>
-    <div class="auth">
+    <div class="auth _profile">
         <form class="auth__form">
             <div class="auth__photo">
                 <svg viewBox="0 0 2006.5 2500"
@@ -80,8 +89,8 @@
             </div>
             <h1 class="auth__title">Иван</h1>
             <%- include('../modules/field.ejs', { fields }); %>
-            <%- include('../modules/btn.ejs', { btn }); %>
-            <%- include('../modules/btn.ejs', { btn: secondBtn }); %>
+            <%- include('../modules/btn.ejs', { btn: changeUserData }); %>
+            <%- include('../modules/btn.ejs', { btn: changeUserPassword }); %>
             <a class="auth__link _logout" href="sign-in.ejs">Выйти</a>
         </form>
     </div>

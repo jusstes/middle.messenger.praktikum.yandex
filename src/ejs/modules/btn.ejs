@@ -1,1 +1,5 @@
-<button type="<%- btn.type %>" class="<%- btn.className %>"><%- btn.title %></button>
+<% if (btn.tagName === 'link') { %>
+    <a href="<%- btn.href %>" class="<%- btn.className %>"><%- btn.title %></a>
+<% } else { %>
+    <button type="<%- btn.type %>" class="<%- btn.className %>"><%- btn.title %></button>
+<% } %>

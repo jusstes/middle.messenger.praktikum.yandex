@@ -65,6 +65,10 @@
   }
 
   &._low-margin {
-    margin-top: 5rem;
+    margin-top: 2.4rem;
+
+    &:first-of-type {
+      margin-top: 5rem;
+    }
   }
 }

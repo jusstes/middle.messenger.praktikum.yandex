@@ -37,6 +37,10 @@
 
     &._logout {
       color: $color_error;
+
+      @include hover {
+        text-decoration-color: $color_error;
+      }
     }
   }
 
