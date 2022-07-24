@@ -1,0 +1,96 @@
+<%- include('../layout/head.ejs', { title: 'Профиль' }); %>
+
+<% const fields = [
+    {
+        id: 'email',
+        type: 'email',
+        label: 'Почта',
+        error: 'Введите почту',
+        inputName: 'email',
+        required: false
+    },
+    {
+        id: 'login',
+        type: 'text',
+        label: 'Логин',
+        error: 'Введите логин',
+        inputName: 'login',
+        required: false
+    },
+    {
+        id: 'firstname',
+        type: 'text',
+        label: 'Имя',
+        error: 'Введите имя',
+        inputName: 'first_name',
+        required: false
+    },
+    {
+        id: 'lastname',
+        type: 'text',
+        label: 'Фамилия',
+        error: 'Введите фамилию',
+        inputName: 'second_name',
+        required: false
+    },
+    {
+        id: 'tel',
+        type: 'tel',
+        label: 'Телефон',
+        error: 'Введите телефон',
+        inputName: 'phone',
+        required: false
+    },
+    {
+        id: 'password',
+        type: 'password',
+        label: 'Пароль',
+        error: 'Введите пароль',
+        inputName: 'password',
+        required: false
+    },
+    {
+        id: 'password-repeat',
+        type: 'password',
+        label: 'Повторите пароль',
+        error: 'Пароли не совпадают',
+        inputName: 'password-repeat',
+        required: false
+    },
+    {
+        id: 'avatar',
+        type: 'file',
+        inputName: 'avatar',
+        required: false,
+        className: '_hidden'
+    }
+] %>
+<% const changeUserData = {
+    title: 'Изменить данные',
+    className: 'btn default _low-margin',
+    tagName: 'link',
+    href: 'change-user-data.ejs'
+} %>
+<% const changeUserPassword = {
+    title: 'Изменить пароль',
+    className: 'btn default _low-margin',
+    tagName: 'link',
+    href: 'change-password.ejs'
+} %>
+
+<main>
+    <div class="auth _profile">
+        <form class="auth__form">
+            <div class="auth__photo">
+                <%- include('../modules/default-avatar.ejs')%>
+            </div>
+            <h1 class="auth__title">Иван</h1>
+            <%- include('../modules/field.ejs', { fields }); %>
+            <%- include('../modules/btn.ejs', { btn: changeUserData }); %>
+            <%- include('../modules/btn.ejs', { btn: changeUserPassword }); %>
+            <a class="auth__link _logout" href="sign-in.ejs">Выйти</a>
+        </form>
+    </div>
+</main>
+
+<%- include('../layout/foot.ejs'); %>

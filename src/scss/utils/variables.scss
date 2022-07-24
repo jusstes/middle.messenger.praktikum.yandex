@@ -1,0 +1,22 @@
+// container
+$width_container: 128rem;
+$width_container_tablet: calc(100% - 8rem);
+$width_container_mobile: calc(100% - 4rem);
+
+// transitions
+$transition_duration: .25s;
+$transition_ease: ease;
+$transition-default: $transition_duration $transition_ease;
+
+$font_main: 'Inter', 'Arial', sans-serif;
+
+// colors
+$background_default: #1E1E1E;
+$color-text: #F5F5F5;
+$color_error: #FF2F2F;
+$color_accent: #5182FF;
+$background_modal: #2E2E2E;
+$background_input: #484848;
+$color_gray: #EFEFEF;
+$color_border-dark: rgba(0, 0, 0, 0.14);
+$color_gray-light: #5182ff08;

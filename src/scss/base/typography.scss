@@ -1,0 +1,36 @@
+@mixin h1 {
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+}
+
+@mixin text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+@mixin text-error {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  color: $color_error;
+}
+
+@mixin text-btn {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+@mixin text-body {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+@mixin text-label {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+@mixin text-link {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}

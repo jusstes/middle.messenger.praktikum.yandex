@@ -1,0 +1,67 @@
+.user {
+  display: flex;
+  width: 100%;
+  max-width: 31rem;
+  background-color: transparent;
+  transition: background-color $transition-default;
+
+  &__image {
+    @include box(3.4rem);
+
+    margin-right: 1rem;
+    border-radius: 100%;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__message {
+    display: -webkit-box;
+    max-width: 85%;
+    margin: 0;
+    font-weight: 400;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &-count {
+      @include box(1rem);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      border-radius: 100%;
+      background-color: $color_accent;
+    }
+  }
+
+  &__nickname {
+    max-width: 80%;
+    margin: 0;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
