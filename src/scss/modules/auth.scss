@@ -23,9 +23,9 @@
     max-width: 45rem;
     margin: 5rem 0;
     padding: 5rem 3rem 3rem;
-    border: 1px solid rgba(0, 0, 0, 0.14);
+    border: 1px solid $color_border-dark;
     border-radius: 12px;
-    background-color: #5182ff08;
+    background-color: $color-gray-light;
   }
 
   &__link {

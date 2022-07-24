@@ -105,9 +105,13 @@
             </div>
 
             <form class="app-section__controls | js-form">
-                <button type="button" class="chat__attach"></button>
+                <% const attachBtn = { type: 'button', className: 'chat__attach' } %>
+                <%- include('../modules/btn.ejs', { btn: attachBtn }); %>
+
                 <input type="text" class="chat__message-input" placeholder="Сообщение">
-                <button type="submit" class="chat__submit"></button>
+
+                <% const submitBtn = { type: 'submit', className: 'chat__submit' } %>
+                <%- include('../modules/btn.ejs', { btn: submitBtn }); %>
             </form>
         </div>
     </div>
