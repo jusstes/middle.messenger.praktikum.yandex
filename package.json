@@ -21,6 +21,7 @@
     "parcel-transformer-ejs": "1.0.0",
     "prettier": "2.6.2",
     "stylelint": "^14.9.1",
+    "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-standard-scss": "^5.0.0"
   },
   "dependencies": {
