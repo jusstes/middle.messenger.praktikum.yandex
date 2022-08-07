@@ -7,7 +7,8 @@
     "dev": "nodemon src/js/server.js",
     "start": "node src/js/server.js",
     "serve": "parcel src/ejs/views/*.ejs --open",
-    "build": "parcel build src/ejs/views/*.ejs"
+    "build": "parcel build src/ejs/views/*.ejs",
+    "lint:style": "npx stylelint **/*.scss"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,9 @@
     "nodemon": "2.0.19",
     "parcel": "2.6.2",
     "parcel-transformer-ejs": "1.0.0",
-    "prettier": "2.6.2"
+    "prettier": "2.6.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard-scss": "^5.0.0"
   },
   "dependencies": {
     "dotenv": "16.0.1"
