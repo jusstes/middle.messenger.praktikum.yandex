@@ -12,7 +12,9 @@ if (chatContent) window.onload = scrollToBottom;
 import SignInForm from '../pages/signInForm';
 import SignUpForm from '../pages/signUpForm';
 import Profile from '../pages/profile';
+import ChangePassword from '../pages/changePassword';
 
 render('main', new SignInForm());
 render('main', new SignUpForm());
 render('main', new Profile());
+render('main', new ChangePassword());
