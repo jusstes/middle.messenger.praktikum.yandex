@@ -14,9 +14,13 @@ import SignUpForm from '../pages/signUpForm';
 import Profile from '../pages/profile';
 import ChangePassword from '../pages/changePassword';
 import ChangeUserData from '../pages/changeUserData';
+import ClientError from '../pages/clientError';
+import ServerError from '../pages/serverError';
 
 render('main', new SignInForm());
 render('main', new SignUpForm());
 render('main', new Profile());
 render('main', new ChangePassword());
 render('main', new ChangeUserData());
+render('main', new ClientError());
+render('main', new ServerError());
