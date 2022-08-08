@@ -34,3 +34,16 @@ render(
     className: '',
   }),
 );
+
+import Message from '../components/message';
+
+render(
+  'main',
+  new Message({
+    text: 'Проверим?',
+    time: '19:48',
+    isYourMessage: true,
+    isRead: true,
+    isMedia: false,
+  }),
+);
