@@ -19,3 +19,18 @@ render(
     className: 'btn default',
   }),
 );
+
+import Field from '../components/field';
+
+render(
+  'main',
+  new Field({
+    id: 'oldPassword',
+    type: 'password',
+    label: 'Старый пароль',
+    error: 'Введите пароль',
+    inputName: 'oldPassword',
+    required: true,
+    className: '',
+  }),
+);
