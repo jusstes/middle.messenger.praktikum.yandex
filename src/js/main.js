@@ -61,3 +61,7 @@ render(
     unreadMessageCount: '3',
   }),
 );
+
+import SignInForm from '../components/signInForm';
+
+render('main', new SignInForm());
