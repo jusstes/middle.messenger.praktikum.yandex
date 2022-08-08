@@ -1,7 +1,6 @@
 import ejs from 'ejs';
 
 const string = `
-<main>
     <div class="auth _profile">
         <form class="auth__form">
             <div class="auth__photo">
@@ -14,7 +13,6 @@ const string = `
             <%- submitBtn %>
         </form>
     </div>
-</main>
 `;
 
 const template = ejs.compile(string);

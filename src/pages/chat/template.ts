@@ -1,10 +1,9 @@
 import ejs from 'ejs';
 
 const string = `
-<main>
     <div class="app-section chat">
         <div class="app-section__side">
-            <a href="profile.ejs" class="chat__link">Профиль</a>
+            <a href="profile.html" class="chat__link">Профиль</a>
             <input type="text" placeholder="Поиск" class="chat__search">
             <%- chatFields1 %>
             <%- chatFields2 %>
@@ -35,7 +34,6 @@ const string = `
             </form>
         </div>
     </div>
-</main>
 `;
 
 const template = ejs.compile(string);
