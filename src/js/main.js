@@ -13,8 +13,10 @@ import SignInForm from '../pages/signInForm';
 import SignUpForm from '../pages/signUpForm';
 import Profile from '../pages/profile';
 import ChangePassword from '../pages/changePassword';
+import ChangeUserData from '../pages/changeUserData';
 
 render('main', new SignInForm());
 render('main', new SignUpForm());
 render('main', new Profile());
 render('main', new ChangePassword());
+render('main', new ChangeUserData());
