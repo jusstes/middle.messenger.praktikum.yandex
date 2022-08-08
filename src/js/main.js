@@ -63,5 +63,7 @@ render(
 );
 
 import SignInForm from '../components/signInForm';
+import SignUpForm from '../components/signUpForm';
 
 render('main', new SignInForm());
+render('main', new SignUpForm());

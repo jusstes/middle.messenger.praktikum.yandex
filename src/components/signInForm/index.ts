@@ -3,7 +3,7 @@ import Component from '../../utils/Component';
 import Field from '../field';
 import Button from '../button';
 
-class signInForm extends Component {
+class SignInForm extends Component {
   constructor(props: Record<string, any> = {}) {
     const login = new Field({
       id: 'login',
@@ -41,4 +41,4 @@ class signInForm extends Component {
   }
 }
 
-export default signInForm;
+export default SignInForm;
