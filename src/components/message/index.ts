@@ -7,6 +7,7 @@ interface IMessage {
   isYourMessage: boolean;
   isRead: boolean;
   isMedia: boolean;
+  src: string;
 }
 
 class Message extends Component {
