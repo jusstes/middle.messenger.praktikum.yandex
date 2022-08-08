@@ -47,3 +47,17 @@ render(
     isMedia: false,
   }),
 );
+
+import UserField from '../components/userField';
+
+render(
+  'main',
+  new UserField({
+    userName: 'Alex',
+    src: '../../static/images/photo.jpg',
+    className: '',
+    time: 'Пн',
+    message: 'Вы: стикер',
+    unreadMessageCount: '3',
+  }),
+);
