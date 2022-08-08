@@ -1,7 +1,7 @@
 import template from './template';
 import Component from '../../utils/Component';
-import Field from '../field';
-import Button from '../button';
+import Field from '../../components/field';
+import Button from '../../components/button';
 
 class SignInForm extends Component {
   constructor(props: Record<string, any> = {}) {

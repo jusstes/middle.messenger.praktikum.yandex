@@ -1,9 +1,10 @@
 import template from './template';
 import Component from '../../utils/Component';
-import Field from '../field';
-import Button from '../button';
+import Button from '../../components/button';
+import Field from '../../components/field';
+import DefaultAvatar from '../../components/defaultAvatar';
 
-class SignUpForm extends Component {
+class Profile extends Component {
   constructor(props: Record<string, any> = {}) {
     const email = new Field({
       id: 'email',
@@ -11,7 +12,7 @@ class SignUpForm extends Component {
       label: 'Почта',
       error: 'Введите почту',
       inputName: 'email',
-      required: true,
+      required: false,
       className: '',
     });
 
@@ -21,7 +22,7 @@ class SignUpForm extends Component {
       label: 'Логин',
       error: 'Введите логин',
       inputName: 'login',
-      required: true,
+      required: false,
       className: '',
     });
 
@@ -31,7 +32,7 @@ class SignUpForm extends Component {
       label: 'Имя',
       error: 'Введите имя',
       inputName: 'first_name',
-      required: true,
+      required: false,
       className: '',
     });
 
@@ -41,7 +42,7 @@ class SignUpForm extends Component {
       label: 'Фамилия',
       error: 'Введите фамилию',
       inputName: 'second_name',
-      required: true,
+      required: false,
       className: '',
     });
 
@@ -51,7 +52,7 @@ class SignUpForm extends Component {
       label: 'Телефон',
       error: 'Введите телефон',
       inputName: 'phone',
-      required: true,
+      required: false,
       className: '',
     });
 
@@ -61,7 +62,7 @@ class SignUpForm extends Component {
       label: 'Пароль',
       error: 'Введите пароль',
       inputName: 'password',
-      required: true,
+      required: false,
       className: '',
     });
 
@@ -71,16 +72,26 @@ class SignUpForm extends Component {
       label: 'Повторите пароль',
       error: 'Пароли не совпадают',
       inputName: 'password-repeat',
-      required: true,
+      required: false,
       className: '',
     });
 
-    const submitBtn = new Button({
-      tagName: 'link',
-      href: '#',
-      title: 'Зарегистрироваться',
-      type: 'submit',
+    const avatar = new DefaultAvatar({});
+
+    const changeDataBtn = new Button({
+      title: 'Изменить данные',
       className: 'btn default _low-margin',
+      tagName: 'link',
+      href: 'change-user-data.ejs',
+      type: '',
+    });
+
+    const changeUserPassword = new Button({
+      title: 'Изменить пароль',
+      className: 'btn default _low-margin',
+      tagName: 'link',
+      href: 'change-password.ejs',
+      type: '',
     });
 
     super('div', {
@@ -91,7 +102,9 @@ class SignUpForm extends Component {
       tel,
       password,
       passwordRepeat,
-      submitBtn,
+      changeDataBtn,
+      changeUserPassword,
+      avatar,
       ...props,
     });
   }
@@ -101,4 +114,4 @@ class SignUpForm extends Component {
   }
 }
 
-export default SignUpForm;
+export default Profile;
