@@ -7,7 +7,7 @@ const string = `
       <%- login %>
       <%- password %>
       <%- submitBtn %>
-      <a class="auth__link" href="sign-up.html">Нет аккаунта?</a>
+      <a class="auth__link" href="sign-up">Нет аккаунта?</a>
     </form>
   </div>
 `;

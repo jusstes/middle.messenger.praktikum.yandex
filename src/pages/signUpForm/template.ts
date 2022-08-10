@@ -12,7 +12,7 @@ const string = `
             <%- password %>
             <%- passwordRepeat %>
             <%- submitBtn %>
-            <a class="auth__link" href="sign-in.html">Войти</a>
+            <a class="auth__link" href="sign-in">Войти</a>
         </form>
     </div>
 `;

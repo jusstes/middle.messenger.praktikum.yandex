@@ -82,7 +82,7 @@ class Profile extends Component {
       title: 'Изменить данные',
       className: 'btn default _low-margin',
       tagName: 'link',
-      href: 'change-user-data.html',
+      href: 'change-user-data',
       type: '',
     });
 
@@ -90,7 +90,7 @@ class Profile extends Component {
       title: 'Изменить пароль',
       className: 'btn default _low-margin',
       tagName: 'link',
-      href: 'change-password.html',
+      href: 'change-password',
       type: '',
     });
 

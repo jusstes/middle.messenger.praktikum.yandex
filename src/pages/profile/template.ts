@@ -16,7 +16,7 @@ const string = `
             <%- passwordRepeat %>
             <%- changeDataBtn %>
             <%- changeUserPassword %>
-            <a class="auth__link _logout" href="sign-in.html">Выйти</a>
+            <a class="auth__link _logout" href="sign-in">Выйти</a>
         </form>
     </div>
 `;
