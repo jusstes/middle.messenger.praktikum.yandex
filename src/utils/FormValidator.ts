@@ -40,7 +40,7 @@ class FormValidator {
     },
   };
 
-  static verification(inputName: string, inputValue: string) {
+  static validate(inputName: string, inputValue: string) {
     const result: {
       verify: boolean;
       message: string;

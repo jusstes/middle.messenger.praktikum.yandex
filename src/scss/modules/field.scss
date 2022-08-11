@@ -21,6 +21,11 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility $transition-default, opacity $transition-default;
+
+    &._visible {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   &__input {
