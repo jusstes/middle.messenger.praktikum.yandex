@@ -26,27 +26,27 @@ const handleSubmit = (evt: { preventDefault: () => any }) => {
 chatForm?.addEventListener('submit', handleSubmit);
 
 const currentPathname: string = window.location.pathname;
-
-switch (currentPathname) {
-  case '/sign-in':
+console.log(currentPathname.includes('client-error'));
+switch (true) {
+  case currentPathname.includes('sign-in'):
     render('#js-content', new SignInForm());
     break;
-  case '/sign-up':
+  case currentPathname.includes('sign-up'):
     render('#js-content', new SignUpForm());
     break;
-  case '/profile':
+  case currentPathname.includes('profile'):
     render('#js-content', new Profile());
     break;
-  case '/change-password':
+  case currentPathname.includes('change-password'):
     render('#js-content', new ChangePassword());
     break;
-  case '/change-user-data':
+  case currentPathname.includes('change-user-data'):
     render('#js-content', new ChangeUserData());
     break;
-  case '/client-error':
+  case currentPathname.includes('client-error'):
     render('#js-content', new ClientError());
     break;
-  case '/server-error':
+  case currentPathname.includes('server-error'):
     render('#js-content', new ServerError());
     break;
   default:

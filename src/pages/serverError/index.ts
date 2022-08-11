@@ -4,13 +4,13 @@ import ErrorSection from '../../components/errorSection';
 
 class ServerError extends Component {
   constructor(props: Record<string, any> = {}) {
-    const serverSection = new ErrorSection({
+    const errorSection = new ErrorSection({
       errorCode: '500',
       errorMessage: 'Уже фиксим',
       errorBackLink: '#',
       errorBackText: 'Назад к чатам',
     });
-    super('div', { serverSection, ...props });
+    super('div', { errorSection, ...props });
   }
 
   render() {
