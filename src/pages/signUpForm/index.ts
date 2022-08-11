@@ -2,6 +2,7 @@ import template from './template';
 import Component from '../../utils/Component';
 import Field from '../../components/field';
 import Button from '../../components/button';
+import { handleSubmit } from '../../utils/events';
 
 class SignUpForm extends Component {
   constructor(props: Record<string, any> = {}) {
@@ -81,6 +82,9 @@ class SignUpForm extends Component {
       title: 'Зарегистрироваться',
       type: 'submit',
       className: 'btn default _low-margin',
+      events: {
+        click: handleSubmit,
+      },
     });
 
     super('div', {

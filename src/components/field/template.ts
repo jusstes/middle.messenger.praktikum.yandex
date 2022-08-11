@@ -5,8 +5,7 @@ const string = `
       <% if (label) { %>
           <label class="field__label" for="<%- id %>"><%- label %></label>
       <% } %>
-      <input class="field__input <%- className ? className : '' %>" <%- required ? 'required' : '' %> name="<%- inputName %>" type="<%- type %>"
-             id="<%- id %>" autocomplete="off">
+      <%- inputElement %>
       <% if (error) { %>
           <span class="field__error"><%- error %></span>
       <% } %>

@@ -25,7 +25,7 @@ const handleSubmit = (evt: Event): void => {
   evt.preventDefault();
 
   const inputValue: Record<string, string> = {};
-  const inputList = document.querySelectorAll('.input');
+  const inputList = document.querySelectorAll('input');
 
   inputList.forEach((input: any) => {
     inputValue[input.name] = input.value;
@@ -37,7 +37,7 @@ const handleSubmit = (evt: Event): void => {
 const focus = (event: Event): void => {
   const input = event.target as HTMLInputElement;
   const errorElement = findErrorElement(input);
-  errorElement?.classList.remove('input-error');
+  errorElement?.classList.remove('_visible');
 };
 
 const blur = (event: Event): void => {

@@ -1,5 +1,7 @@
 import template from './template';
 import Component from '../../utils/Component';
+import Input from '../input';
+import { blur, focus } from '../../utils/events';
 
 interface IField {
   id: string;
@@ -9,12 +11,24 @@ interface IField {
   inputName: string;
   required: boolean;
   className: string;
-  events?: { click: (e: Event) => void };
+  events?: { focus: (e: Event) => void; blur: (e: Event) => void };
 }
 
 class Field extends Component {
   constructor(props: IField) {
-    super('div', props);
+    const inputElement = new Input({
+      id: props.id,
+      type: props.type,
+      inputName: props.inputName,
+      required: props.required,
+      className: props.className,
+      events: {
+        focus: focus,
+        blur: blur,
+      },
+    });
+
+    super('div', { inputElement, ...props });
   }
 
   render() {

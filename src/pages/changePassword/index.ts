@@ -3,6 +3,7 @@ import Component from '../../utils/Component';
 import Field from '../../components/field';
 import Button from '../../components/button';
 import DefaultAvatar from '../../components/defaultAvatar';
+import { handleSubmit } from '../../utils/events';
 
 class ChangePassword extends Component {
   constructor(props: Record<string, any> = {}) {
@@ -42,6 +43,9 @@ class ChangePassword extends Component {
       className: 'btn default _low-margin',
       href: '#',
       tagName: '',
+      events: {
+        click: handleSubmit,
+      },
     });
 
     const avatar = new DefaultAvatar({});

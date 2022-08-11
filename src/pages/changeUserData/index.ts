@@ -3,6 +3,7 @@ import Component from '../../utils/Component';
 import Field from '../../components/field';
 import Button from '../../components/button';
 import DefaultAvatar from '../../components/defaultAvatar';
+import { handleSubmit } from '../../utils/events';
 
 class ChangeUserData extends Component {
   constructor(props: Record<string, any> = {}) {
@@ -14,6 +15,9 @@ class ChangeUserData extends Component {
       className: 'btn default _low-margin',
       href: '#',
       tagName: '',
+      events: {
+        click: handleSubmit,
+      },
     });
 
     const email = new Field({

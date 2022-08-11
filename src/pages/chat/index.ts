@@ -3,6 +3,7 @@ import Component from '../../utils/Component';
 import Button from '../../components/button';
 import Message from '../../components/message';
 import UserField from '../../components/userField';
+import { handleSubmit } from '../../utils/events';
 
 class Chat extends Component {
   constructor(props: Record<string, any> = {}) {
@@ -65,6 +66,9 @@ class Chat extends Component {
       tagName: 'link',
       href: '#',
       title: '',
+      events: {
+        click: handleSubmit,
+      },
     });
 
     const profileField = new UserField({

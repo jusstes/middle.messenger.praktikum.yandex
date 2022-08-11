@@ -26,7 +26,7 @@ const handleSubmit = (evt: { preventDefault: () => any }) => {
 chatForm?.addEventListener('submit', handleSubmit);
 
 const currentPathname: string = window.location.pathname;
-console.log(currentPathname.includes('client-error'));
+
 switch (true) {
   case currentPathname.includes('sign-in'):
     render('#js-content', new SignInForm());
