@@ -3,7 +3,7 @@ import ejs from 'ejs';
 const string = `
     <div class="app-section chat">
         <div class="app-section__side">
-            <a href="profile.html" class="chat__link">Профиль</a>
+            <a href="profile" class="chat__link">Профиль</a>
             <input type="text" placeholder="Поиск" class="chat__search">
             <%- chatFields1 %>
             <%- chatFields2 %>

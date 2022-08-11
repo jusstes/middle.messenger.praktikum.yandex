@@ -1,9 +1,16 @@
 import template from './template';
 import Component from '../../utils/Component';
+import ErrorSection from '../../components/errorSection';
 
-class ClientError extends Component {
+class ServerError extends Component {
   constructor(props: Record<string, any> = {}) {
-    super('div', { ...props });
+    const serverSection = new ErrorSection({
+      errorCode: '404',
+      errorMessage: 'Не туда попали',
+      errorBackLink: '#',
+      errorBackText: 'Назад к чатам',
+    });
+    super('div', { serverSection, ...props });
   }
 
   render() {
@@ -11,4 +18,4 @@ class ClientError extends Component {
   }
 }
 
-export default ClientError;
+export default ServerError;
