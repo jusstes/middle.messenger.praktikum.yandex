@@ -1,5 +1,5 @@
 ## Описание
-Приложение мессенджера, написанное на ejs + scss, собирается в parcel, запускается на express, задеплоено в [netlify](https://storied-sprite-3c3831.netlify.app/)
+Приложение мессенджера, написанное на ts + ejs.compile + scss, собирается в parcel, запускается на express, задеплоено в [netlify](https://storied-sprite-3c3831.netlify.app/)
 
 ## Команды для запуска
 `yarn` - установка зависимостей
