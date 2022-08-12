@@ -13,7 +13,6 @@ class SignUpForm extends Component {
       error: 'Введите почту',
       inputName: 'email',
       required: true,
-      className: '',
     });
 
     const login = new Field({
@@ -23,7 +22,6 @@ class SignUpForm extends Component {
       error: 'Введите логин',
       inputName: 'login',
       required: true,
-      className: '',
     });
 
     const firstname = new Field({
@@ -33,7 +31,6 @@ class SignUpForm extends Component {
       error: 'Введите имя',
       inputName: 'first_name',
       required: true,
-      className: '',
     });
 
     const lastname = new Field({
@@ -43,7 +40,6 @@ class SignUpForm extends Component {
       error: 'Введите фамилию',
       inputName: 'second_name',
       required: true,
-      className: '',
     });
 
     const tel = new Field({
@@ -53,7 +49,6 @@ class SignUpForm extends Component {
       error: 'Введите телефон',
       inputName: 'phone',
       required: true,
-      className: '',
     });
 
     const password = new Field({
@@ -63,7 +58,6 @@ class SignUpForm extends Component {
       error: 'Введите пароль',
       inputName: 'password',
       required: true,
-      className: '',
     });
 
     const passwordRepeat = new Field({
@@ -73,7 +67,6 @@ class SignUpForm extends Component {
       error: 'Пароли не совпадают',
       inputName: 'password-repeat',
       required: true,
-      className: '',
     });
 
     const submitBtn = new Button({

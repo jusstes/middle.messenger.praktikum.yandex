@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 
 const app = express();
-const { PORT } = process.env;
+const { PORT } = process.env || 3000;
 
 app.use(express.static(`./dist/`));
 

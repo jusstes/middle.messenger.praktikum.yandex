@@ -1,8 +1,10 @@
 import ejs from 'ejs';
 
 const string = `
+<% src = typeof src === 'string' ? src : '' %>
+
 <% if (isMedia) { %>
-    <img src="<%- src %>" alt="" class="message _image <%- isYourMessage ? '_your-message' : '' %>">
+    <img src="<%- src %>" alt="Фотография пользователя" class="message _image <%- isYourMessage ? '_your-message' : '' %>">
 <% } else { %>
     <div class="message <%- isYourMessage ? '_your-message' : '' %>">
         <p class="message__text"><%- text %></p>

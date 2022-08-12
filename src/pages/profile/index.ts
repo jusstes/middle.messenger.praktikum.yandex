@@ -13,7 +13,6 @@ class Profile extends Component {
       error: 'Введите почту',
       inputName: 'email',
       required: false,
-      className: '',
     });
 
     const login = new Field({
@@ -23,7 +22,6 @@ class Profile extends Component {
       error: 'Введите логин',
       inputName: 'login',
       required: false,
-      className: '',
     });
 
     const firstname = new Field({
@@ -33,7 +31,6 @@ class Profile extends Component {
       error: 'Введите имя',
       inputName: 'first_name',
       required: false,
-      className: '',
     });
 
     const lastname = new Field({
@@ -43,7 +40,6 @@ class Profile extends Component {
       error: 'Введите фамилию',
       inputName: 'second_name',
       required: false,
-      className: '',
     });
 
     const tel = new Field({
@@ -53,7 +49,6 @@ class Profile extends Component {
       error: 'Введите телефон',
       inputName: 'phone',
       required: false,
-      className: '',
     });
 
     const password = new Field({
@@ -63,7 +58,6 @@ class Profile extends Component {
       error: 'Введите пароль',
       inputName: 'password',
       required: false,
-      className: '',
     });
 
     const passwordRepeat = new Field({
@@ -73,7 +67,6 @@ class Profile extends Component {
       error: 'Пароли не совпадают',
       inputName: 'password-repeat',
       required: false,
-      className: '',
     });
 
     const avatar = new DefaultAvatar({});
@@ -83,7 +76,6 @@ class Profile extends Component {
       className: 'btn default _low-margin',
       tagName: 'link',
       href: 'change-user-data',
-      type: '',
     });
 
     const changeUserPassword = new Button({
@@ -91,7 +83,6 @@ class Profile extends Component {
       className: 'btn default _low-margin',
       tagName: 'link',
       href: 'change-password',
-      type: '',
     });
 
     super('div', {

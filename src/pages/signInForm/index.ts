@@ -13,7 +13,6 @@ class SignInForm extends Component {
       error: 'Введите логин',
       inputName: 'login',
       required: true,
-      className: '',
     });
 
     const password = new Field({
@@ -23,7 +22,6 @@ class SignInForm extends Component {
       error: 'Введите пароль',
       inputName: 'password',
       required: true,
-      className: '',
     });
 
     const submitBtn = new Button({

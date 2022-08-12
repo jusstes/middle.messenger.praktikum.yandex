@@ -14,7 +14,6 @@ class ChangePassword extends Component {
       error: 'Введите пароль',
       inputName: 'oldPassword',
       required: true,
-      className: '',
     });
 
     const newPassword = new Field({
@@ -24,7 +23,6 @@ class ChangePassword extends Component {
       error: 'Введите пароль',
       inputName: 'newPassword',
       required: true,
-      className: '',
     });
 
     const newPasswordRepeat = new Field({
@@ -34,7 +32,6 @@ class ChangePassword extends Component {
       error: 'Пароли не совпадают',
       inputName: 'password-repeat',
       required: true,
-      className: '',
     });
 
     const submitBtn = new Button({
@@ -42,7 +39,6 @@ class ChangePassword extends Component {
       type: 'submit',
       className: 'btn default _low-margin',
       href: '#',
-      tagName: '',
       events: {
         click: handleSubmit,
       },

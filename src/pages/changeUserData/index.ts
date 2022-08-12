@@ -14,7 +14,6 @@ class ChangeUserData extends Component {
       type: 'submit',
       className: 'btn default _low-margin',
       href: '#',
-      tagName: '',
       events: {
         click: handleSubmit,
       },
@@ -27,7 +26,6 @@ class ChangeUserData extends Component {
       error: 'Введите почту',
       inputName: 'email',
       required: true,
-      className: '',
     });
 
     const login = new Field({
@@ -37,7 +35,6 @@ class ChangeUserData extends Component {
       error: 'Введите логин',
       inputName: 'login',
       required: true,
-      className: '',
     });
 
     const firstname = new Field({
@@ -47,7 +44,6 @@ class ChangeUserData extends Component {
       error: 'Введите имя',
       inputName: 'first_name',
       required: true,
-      className: '',
     });
 
     const lastname = new Field({
@@ -57,7 +53,6 @@ class ChangeUserData extends Component {
       error: 'Введите фамилию',
       inputName: 'second_name',
       required: true,
-      className: '',
     });
 
     const tel = new Field({
@@ -67,7 +62,6 @@ class ChangeUserData extends Component {
       error: 'Введите телефон',
       inputName: 'phone',
       required: true,
-      className: '',
     });
 
     super('div', {

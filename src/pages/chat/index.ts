@@ -13,7 +13,6 @@ class Chat extends Component {
       isMedia: false,
       isRead: false,
       isYourMessage: false,
-      src: '',
     });
 
     const message2 = new Message({
@@ -22,7 +21,6 @@ class Chat extends Component {
       isMedia: false,
       isRead: false,
       isYourMessage: false,
-      src: '',
     });
 
     const message3 = new Message({
@@ -31,7 +29,6 @@ class Chat extends Component {
       isMedia: false,
       isRead: false,
       isYourMessage: true,
-      src: '',
     });
 
     const message4 = new Message({
@@ -39,7 +36,6 @@ class Chat extends Component {
       time: '14:48',
       isYourMessage: false,
       src: '../../static/images/archi.jpg',
-      text: '',
       isRead: false,
     });
 
@@ -49,15 +45,12 @@ class Chat extends Component {
       isYourMessage: true,
       src: '../../static/images/sailing.jpeg',
       isRead: true,
-      text: '',
     });
 
     const attachBtn = new Button({
       type: 'button',
       className: 'chat__attach',
-      tagName: '',
       href: '#',
-      title: '',
     });
 
     const submitBtn = new Button({
@@ -65,7 +58,6 @@ class Chat extends Component {
       className: 'chat__submit',
       tagName: 'link',
       href: '#',
-      title: '',
       events: {
         click: handleSubmit,
       },
@@ -74,16 +66,11 @@ class Chat extends Component {
     const profileField = new UserField({
       userName: 'Alex',
       src: '../../static/images/photo.jpg',
-      className: '',
-      time: '',
-      message: '',
-      unreadMessageCount: '',
     });
 
     const chatFields1 = new UserField({
       userName: 'Alex',
       src: '../../static/images/photo.jpg',
-      className: '',
       time: 'Пн',
       message: 'Вы: стикер',
       unreadMessageCount: '3',
@@ -92,16 +79,13 @@ class Chat extends Component {
     const chatFields2 = new UserField({
       userName: 'Dmitry',
       src: '../../static/images/photo.jpg',
-      className: '',
       time: '12 апр 2022',
       message: 'Изображение',
-      unreadMessageCount: '',
     });
 
     const chatFields3 = new UserField({
       userName: 'Matthew',
       src: '../../static/images/photo.jpg',
-      className: '',
       time: 'Вчера',
       message: 'И Human Interface Guidelines и Material Design рекомендуют...',
       unreadMessageCount: '3',
@@ -110,7 +94,6 @@ class Chat extends Component {
     const chatFields4 = new UserField({
       userName: 'Noel',
       src: '../../static/images/photo.jpg',
-      className: '',
       time: 'Вт',
       message:
         'И Human Interface Guidelines и Material Design рекомендуют И Human Interface Guidelines и Material Design рекомендуют...',

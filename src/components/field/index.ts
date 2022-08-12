@@ -10,7 +10,7 @@ interface IField {
   error: string;
   inputName: string;
   required: boolean;
-  className: string;
+  className?: string;
   events?: { focus: (e: Event) => void; blur: (e: Event) => void };
 }
 

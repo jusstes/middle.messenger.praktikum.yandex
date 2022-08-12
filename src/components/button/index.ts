@@ -2,11 +2,11 @@ import template from './template';
 import Component from '../../utils/Component';
 
 interface IButton {
-  tagName: string;
+  tagName?: string;
   href: string;
   className: string;
-  title: string;
-  type: string;
+  title?: string;
+  type?: string;
   events?: { click: (e: Event) => void };
 }
 

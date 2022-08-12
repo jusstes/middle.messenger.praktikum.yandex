@@ -1,6 +1,6 @@
 import queryStringify from './queryStringify';
 
-enum METHODS {
+enum Methods {
   GET = 'GET',
   POST = 'POST',
   PUT = 'PUT',
@@ -22,38 +22,25 @@ class HTTPTransport {
       urlAddon = queryStringify(options.data);
     }
 
-    return this.request(
-      `${url}${urlAddon}`,
-      { ...options, method: METHODS.GET },
-      options.timeout,
-    );
+    return this.request(`${url}${urlAddon}`, {
+      ...options,
+      method: Methods.GET,
+    });
   };
 
   public post = (url: string, options: Options) => {
-    return this.request(
-      url,
-      { ...options, method: METHODS.POST },
-      options.timeout,
-    );
+    return this.request(url, { ...options, method: Methods.POST });
   };
 
   public put = (url: string, options: Options) => {
-    return this.request(
-      url,
-      { ...options, method: METHODS.PUT },
-      options.timeout,
-    );
+    return this.request(url, { ...options, method: Methods.PUT });
   };
 
   public delete = (url: string, options: Options) => {
-    return this.request(
-      url,
-      { ...options, method: METHODS.DELETE },
-      options.timeout,
-    );
+    return this.request(url, { ...options, method: Methods.DELETE });
   };
 
-  private request = (url: string, options: Options, timeout = 3000) => {
+  private request = (url: string, options: Options) => {
     const { headers = {}, method } = options;
 
     return new Promise((resolve, reject) => {
@@ -69,7 +56,9 @@ class HTTPTransport {
         xhr.setRequestHeader(key, headers[key]);
       });
 
-      xhr.timeout = timeout;
+      if (options.timeout) {
+        xhr.timeout = options.timeout;
+      }
 
       xhr.onload = () => resolve(xhr);
 

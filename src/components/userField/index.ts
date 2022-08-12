@@ -4,10 +4,10 @@ import Component from '../../utils/Component';
 interface IUserField {
   userName: string;
   src: string;
-  className: string;
-  time: string;
-  message: string;
-  unreadMessageCount: string;
+  className?: string;
+  time?: string;
+  message?: string;
+  unreadMessageCount?: string;
 }
 
 class UserField extends Component {

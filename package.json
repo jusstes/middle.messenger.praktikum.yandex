@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/js/server.js",
     "start": "node src/js/server.js",
-    "serve": "parcel src/ejs/views/index.ejs --open",
+    "serve": "parcel src/ejs/views/index.ejs --open --port 3000",
     "build": "parcel build src/ejs/views/index.ejs",
     "lint:style": "npx stylelint **/*.scss",
     "lint:script": "eslint ./src/js"
