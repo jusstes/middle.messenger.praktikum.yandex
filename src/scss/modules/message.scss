@@ -6,7 +6,7 @@
   max-width: 55%;
   margin-bottom: 1.4rem;
   padding: 1rem 1.6rem 1.6rem 1rem;
-  border-radius: 0 10px 10px 10px;
+  border-radius: 0 10px 10px;
   background-color: $background_input;
 
   @include --tablet {
@@ -23,7 +23,7 @@
   &._your-message {
     margin-right: 0;
     margin-left: auto;
-    border-radius: 10px 10px 0 10px;
+    border-radius: 10px 10px 0;
     background-color: $background_modal;
   }
 
